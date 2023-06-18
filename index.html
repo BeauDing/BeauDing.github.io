@@ -136,13 +136,8 @@
       color: #e37222;
     }
 
-    video{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    }
     video:focus {
-    outline:none;
+      outline: -webkit-focus-ring-color auto 0px;
     }
 
   </style>
@@ -373,7 +368,7 @@
           
           <tr>
             <td valign="center">
-              <video style="width:210px;object-fit:contain;"  playsinline autoplay loop preload muted> 
+              <video style="width:210px;object-fit:fill;"  playsinline autoplay loop preload muted> 
                 <source src="/images/FaceReenactment.mp4" type="video/mp4"> 
               </video>
             </td>

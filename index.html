@@ -1,0 +1,809 @@
+<!--
+ * @Author: Jon Barron
+ * @Date: 2019-05-11 22:15:22
+ * @Editors: whyisyoung
+ * @EditTime: 2020-10-23 10:57:25
+ * @LastEditors:Bo Ding
+ * @LastEditTime: 2024-08-7 16:26:00
+ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<html>
+
+<head>
+  <meta name=viewport content="width=device-width">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta name="google-site-verification" content="p7SNRHPF7y83Q-nNBLkrxFhAAosW2t40unwTxByZ0vo" />
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      /* color: #07889b; */
+      text-decoration: none;
+    }
+   
+    a.black {
+      color: #000000;
+      /* color: #07889b; */
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #e37222; /* #f09228; */
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+      color: #e37222;
+    }
+
+    subheading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 18px;
+      font-style:italic;
+      color: #e37222;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    researchtitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    researchitem {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .footer {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      opacity: 0.75;
+      color: #777;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+    span.artifact {
+      color:#6cb41b;
+      padding: 1px;
+    }
+
+    span.underline {
+      border-bottom:1px solid black;
+      padding-bottom:1px;
+    }
+
+    span.tldr {
+      color: #555555;
+    }
+
+    em.highlight {
+      color: #e37222;
+    }
+
+    video:focus {
+    /* outline: -webkit-focus-ring-color auto 0px; */
+    outline: none;
+    }
+
+  </style>
+  <link rel="icon" type="image/png" href="images/last.png">
+  <title>Bo Ding's Homepage</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="960" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <!-- ***************************************************************************************** -->
+        <!-- Intro Begin -->
+        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+          </colgroup>
+          <tr>
+            <td valign="middle">
+              <img src="images/BoDing.jpg" height="170px" style="border-radius:50%;" >
+            </td>
+            <td valign="middle">
+              <p align="left">
+                <name>Bo Ding (丁博)</name>
+              </p>
+              <p>
+                I am a first-year Ph.D. student in Electrical Engineering at the City University of Hong Kong (CityU), supervised by Professor <a href="https://hlli1991.github.io/">Haoliang Li</a>. Before CityU, I received my master's degree (2021-2024) at the Institute of Computing Technology Chinese Academy of Sciences (ICT, CAS) supervised by Professor Shihong Xia, researching <i>Face Forgery Detection</i> and <i>Talking Face Generation</i>.
+              </p>
+              <p>
+                My research interests include:
+                <ul>
+                  <li>Applications: AI for Digital Human, AI for Security</li>
+                  <li>Technologies: Generative Model, Natural Language Understanding</li>
+                </ul>
+              </p>
+              <!-- <p align=left><font color="red">Attention: I am applying for a PhD in 2024 Fall.</font> </p> -->
+              <p align=left>
+                Please don't hesitate to contact me if you are interested in my research.
+                <br>
+                Contact: boding8-c [AT] my.cityu.edu.hk
+              </p>
+              <p align=left>
+                <a href="data/CV_BoDing.pdf"><b>Currículum Vitae</b></a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/BeauDing"> GitHub </a>  &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=xMx-T_QAAAAJ"> Google Scholar </a> 
+                
+                <!-- <a href="https://scholar.google.com/citations?user=8BEUQ9UAAAAJ">Google Scholar</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://www.researchgate.net/profile/Qiang_Sheng5/">ResearchGate</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://orcid.org/0000-0002-2481-5023"> ORCID </a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://dblp.org/pid/199/7557.html"> DBLP </a> -->
+              </p>
+            </td>
+          </tr>
+        </table>
+        <!-- Intro End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- News Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading> Attention: I will graduate in the autumn of 2024 and I am looking to apply for a PhD ~ </heading>
+            </td>
+          </tr>
+        </table> -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>News</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+          </colgroup>
+            <tr>
+              <td valign="center">
+                2024/08
+              </td>
+              <td valign="center">
+                I entered the City University of Hong Kong as a Ph.D. student.
+              </td>
+            </tr>
+            <tr>
+              <td valign="center">
+                2024/05
+              </td>
+              <td valign="center">
+                Completed my master's theis defense.
+              </td>
+            </tr>
+            <tr>
+              <td valign="center">
+                2024/04
+              </td>
+              <td valign="center">
+                Invited to serve as a Reviewer for ACM MM 2024.
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td valign="center">
+                2024/03
+              </td>
+              <td valign="center">
+                Invited to serve as a PC member for WWW 2024.
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td valign="center">
+                2023/07
+              </td>
+              <td valign="center">
+                One first-authored paper got accepted by MTAP.
+              </td>
+            </tr>
+            <tr>
+              <td valign="center">
+                2023/06
+              </td>
+              <td valign="center">
+                One co-authored paper got accepted.
+              </td>
+            </tr>
+           <!-- <tr>
+           <td>
+           <a href="news.html">Full List</a>
+           </td>
+          </tr> -->
+        </table>
+        <!-- News End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- Publications Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+          </colgroup>
+          <!-- <td>
+            <subheading>Preprint</subheading>
+          </td>
+          <tr>
+            <td valign="center">
+                <a href="https://arxiv.org/pdf/2302.03242">Combating Online Misinformation Videos: Characterization, Detection, and Future Directions </a>
+                <a href="https://github.com/ICTMCG/Awesome-Misinfo-Video-Detection">(Companion GitHub Repository)</a>
+            </td>
+          </tr>
+          <td>
+            <subheading>2023</subheading>
+          </td>
+          <tr>
+            <td valign="center">
+                <papertitle id="COLING2022">Improving Fake News Detection of Influential Domain via Domain- and Instance-Level Transfer</papertitle>
+                <br>
+                <a class="black" href="https://scholar.google.com/citations?user=ZKGK1AIAAAAJ">Qiong Nan</a>, <a class="black" href="https://scholar.google.com/citations?user=hGZwK0cAAAAJ">Danding Wang</a>, <a class="black" href="https://easezyc.github.io/">Yongchun Zhu</a>, <span class="underline">Qiang Sheng</span>, Yuhui Shi, <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>, and Jintao Li
+                <br>
+                <i>Proceedings of the 29th International Conference on Computational Linguistics (COLING 2022) (Acceptance Rate:165/667=24.7%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2209.08902">Preprint</a> /
+                <a href="https://aclanthology.org/2022.coling-1.250.pdf">Paper</a> /
+                <a href="#">Paper (TBA)</a> /
+                <a href="https://github.com/ICTMCG/DITFEND">Code</a> /
+                <a href="https://mp.weixin.qq.com/s/GpENICRa0dePwvw_3jNL3Q">Chinese Blog 1</a>/
+                <a href="https://zhuanlan.zhihu.com/p/563985492">2</a>
+                <br>
+                <span class="tldr">TL;DR: We propose a domain- and instance-level transfer framework for detecting fake news of target domains.</span>
+            </td>
+          </tr> -->
+          <tr>
+            <!-- <td valign="center">
+              <img src="images/Myportrait_pipeline.png" width="210px">
+            </td> -->
+            <td valign="center">
+              <video style="width:210px;object-fit:cover;"  playsinline autoplay loop preload muted> 
+                <source src="/images/FaceReenactment.mp4" type="video/mp4"> 
+              </video>
+            </td>
+            <td valign="center">
+                <papertitle>MyPortrait: Morphable Prior-Guided Personalized Portrait Generation</papertitle>
+                <br>
+                <span class="underline">Bo Ding</span>, Zhenfeng Fan, Shuang Yang, and Shihong Xia
+                <br>
+                <!-- <i>AAAI-24 (under review) </i>
+                <br> -->
+                <a href="https://arxiv.org/abs/2312.02703">Preprint</a>
+                <br>
+                <span class="tldr">TL;DR: We present Myportrait, a method for learning personalized neural portraits. By incorporating personalized prior from a monocular video and morphable prior from 3DMM, our framework can generate realistic portraits with personalized details.</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <!-- <img src="images/STDN_pipeline.png" width="210px"> -->
+              <img src="images/STDN_visual.png" width="210px">
+            </td>
+            <td valign="center">
+                <papertitle>Mining Collaborative Spatio-Temporal Clues for Face Forgery Detection</papertitle>
+                <br>
+                <span class="underline">Bo Ding</span>, Zhenfeng Fan, Zejun Zhao, and Shihong Xia
+                <br>
+                <i>Multimedia Tools and Applications (JCR Q2, CCF-C), 2023 </i>
+                <br>
+                  <a href="https://doi.org/10.1007/s11042-023-16173-4">Paper</a>   &nbsp;/&nbsp;
+                  <a href="https://blog.csdn.net/db895166315/article/details/134764790?spm=1001.2014.3001.5501">Chinese Blog</a> 
+                <br>
+                <span class="tldr">TL;DR: We propose a multi-branch spatio-temporal difference network for face forgery detection by capturing complementary low-level spatio-temporal features in videos, which can enhance the generalization ability of the model.</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <img src="images/incrementallearning_pipeline.png" width="210px">
+            </td>
+            <td valign="center">
+                <papertitle>Deepfake Detection Based on Incremental Learning</papertitle>
+                <br>
+                Zejun Zhao, Zhenfeng Fan, <span class="underline">Bo Ding</span>, and Shihong Xia
+                <br>
+                <i>Frontiers of Data and Computing (In Chinese), 2023  </i>
+                <br>
+                <a href="http://www.jfdc.cnic.cn/CN/10.11871/jfdc.issn.2096-742X.2023.06.005">Paper</a>
+                <br>
+                <span class="tldr">TL;DR: We design a face forgery detection system based on incremental learning, which reduces the training cost of the model when introducing new forgery samples.</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <img src="images/GTGAN_pipeline.png" width="210px">
+            </td>
+            <td valign="center">
+                <papertitle>GT-GAN: A General Transductive Zero-Shot Learning Method Based on GAN</papertitle>
+                <br>
+                Junhao Dong, Bo Xiao, <span class="underline">Bo Ding</span>, and Haoyv Wang
+                <br>
+                <i>IEEE Access (JCR Q2), 2020</i>
+                <br>
+                <a href="https://doi.org/10.1109/ACCESS.2020.3015334">Paper</a>
+                <br>
+                <span class="tldr">TL;DR: We propose a general transductive ZSL method based on GANs, called GT-GAN, which introduces unlabeled unseen samples for training, to improve the performance of the generator.</span>
+            </td>
+          </tr>
+
+
+
+        </table>
+        <!-- Publications End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- Research Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Research Experience</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+          </colgroup>
+          
+          <tr>
+            <td valign="center">
+              <video style="width:210px;object-fit:cover;"  playsinline autoplay loop preload muted> 
+                <source src="/images/FaceReenactment.mp4" type="video/mp4"> 
+              </video>
+            </td>
+            <td valign="center">
+                <researchitem>Research on Controllable Talking Face Generation method</researchitem>
+                <br>
+                <i>Advisor: Shihong Xia & Zhenfeng Fan | 2023/02-Present</i>
+                <br>
+                <i>Institute of Computing Technology, Chinese Academy of Sciences</i>
+                <br>
+                <details>
+                  <summary><font color="#1772d0">Detail</font></summary>
+                  <span class="tldr">Monocular video-based portrait generation methods can generate realistic neutral portraits. However, due to limited training data, they generate low-quality images when confronted with unseen face parameters. Therefore, we are exploring ways to address the issue.</span>
+                  <br>
+                  <span class="tldr">&#10148 Implemented an identity-specific talking face generation method capable of generating high-quality talking face videos, achieving performance comparable to the state-of-the-art methods.</span>
+                  <br>
+                  <span class="tldr">&#10148 Recently, I am trying to expand the face parameter space of the training data, based on an auxiliary training approach which could effectively improve the quality of the generated images.</span>
+                </details>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td valign="center">
+              <img src="images/STDN_visual.png" width="210px">
+            </td>
+            <td valign="center">
+                <researchitem>Research on Face Forgery Detection method</researchitem>
+                <br>
+                <i>Advisor: Shihong Xia & Zhenfeng Fan | 2021/09-2023/02</i>
+                <br>
+                <i>Institute of Computing Technology, Chinese Academy of Sciences</i>
+                <br>
+                <details>
+                  <summary><font color="#1772d0">Detail</font></summary>
+                  <span class="tldr">The lack of generalization ability is a challenge for existing face forgery detection methods. Therefore, we explored features with more generalization ability.</span>
+                  <br>
+                  <span class="tldr">&#10148 Proposed a multi-branch spatio-temporal difference network for face forgery detection by capturing complementary low-level spatio-temporal features in videos, which can enhance the generalization ability of the model.</span>
+                  <br>
+                  <span class="tldr">&#10148 Involved in the design of a face forgery detection system based on incremental learning, which reduces the training cost of the model when introducing new forgery samples.</span>
+                </details>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td valign="center">
+              <img src="images/faceswap.png" width="210px">
+            </td>
+            <td valign="center">
+                <researchitem>Research on Deep Learning based Face Swapping method</researchitem>
+                <br>
+                <i>Advisor: Shihong Xia & Zhenfeng Fan | 2020/11-2021/05</i>
+                <br>
+                <i>Institute of Computing Technology, Chinese Academy of Sciences</i>
+                <br>
+                <details>
+                <summary><font color="#1772d0">Detail</font></summary>
+                  <span class="tldr">The conventional auto-encoder based face swapping methods produce low-quality images. Therefore, we tried to make improvements to the auto-encoder.</span>
+                  <br>
+                  <span class="tldr">&#10148 Proposed a deep learning face swapping method with an improved auto-encoder structure, which improves the quality of the generated images to a certain extent.</span>
+                  <br>
+                  <span class="tldr">&#10148 Implemented a face swapping system, including the face extraction module, the face swapping module and the face fusion module.</span>
+                </details>
+
+            </td>
+          </tr>
+
+        </table> -->
+        <!-- Research End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- Talks Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Talks</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 75%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+                2024/06
+            </td>
+            <td>
+                <strong> Developing a Self-Managed Lifestyle: An Example of Career Planning </strong>
+                <br>
+                <i>培养自我管理的生活方式：以职业规划为例</i>
+                <br>
+                @ Advanced Computing Technology Seminar, ICT, CAS
+            </td>
+           </tr>
+        </table> -->
+        <!-- Talks End -->
+        <!-- ***************************************************************************************** -->
+
+        <!-- ***************************************************************************************** -->
+        <!-- Teaching Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Teaching Experience</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+                2020/2021 Spring
+            </td>
+            <td>
+                <strong>Teaching Assistant</strong>,
+                081203M05008H: Multimedia Technology,
+                UCAS
+            </td>
+          </tr>
+        </table> -->
+        <!-- Teaching End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- Profession Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Academic Services</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 75%;">
+          </colgroup>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 75%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+                Conference Reviewer
+            </td>
+            <td>
+                ACM MM 2024
+                <br>
+                WWW 2024
+                <br>
+            </td>
+          </tr>
+        </table> -->
+        <!-- Profession End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+        <!-- Education Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Education</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 75%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              2024-Present
+            </td>
+            <td> 
+                Ph.D. in Electrical Engineering
+                <br>
+                <span><a class="black" href="https://www.ee.cityu.edu.hk/department-ee">Department of Electrical Engineering</a></span>
+                <br>
+                <span><a class="black" href="https://www.cityu.edu.hk/">City University of Hong Kong</a></span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2021-2024
+            </td>
+            <td> 
+                M.S. in Computer Science and Technology
+                <br>
+                <span><a class="black" href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a></span>
+                <br>
+                <span>Cultivation Unit: <a class="black" href="http://www.ict.ac.cn/">Institute of Computing Technology</a>, <a class="black" href="http://www.cas.cn/">Chinese Academy of Sciences</a></span>
+
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2017-2021
+            </td>
+            <td>
+                B.Eng. in Communication Engineering
+                <br>
+                <span><a class="black" href="https://sice.bupt.edu.cn/">School of Information and Communication Engineering</a></span>
+                <br>
+                <span><a class="black" href="https://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a></span>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td valign="center">
+              2014-2017
+            </td>
+            <td>
+             <span> <a class="black" href="http://hndcyg.com/">Dancheng No.1 Senior High School</a> </span>
+            </td>
+          </tr> -->
+        </table>
+        <!-- Education End -->
+        <!-- ***************************************************************************************** -->
+       
+        <!-- ***************************************************************************************** -->
+       <!-- Awards Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Honors and Awards</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 75%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              2024
+            </td>
+            <td> 
+              Excellent Prize of the President Scholarship, ICT, CAS
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2023
+            </td>
+            <td> 
+              The First Prize Scholarship, ICT, CAS
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2022, 2023
+            </td>
+            <td> 
+              Outstanding Student Leader, ICT, CAS
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2022, 2023, 2024
+            </td>
+            <td> 
+              Merit Student, ICT, CAS
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2021
+            </td>
+            <td> 
+                Excellent Bachelor Thesis, BUPT
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2020
+            </td>
+            <td> 
+                Honorable Mention, Mathematical Contest In Modeling
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2019
+            </td>
+            <td> 
+                Second Prize, The Chinese Mathematics Competitions
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2019
+            </td>
+            <td> 
+                The Enterprise Scholarship, BUPT
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2018, 2020
+            </td>
+            <td> 
+                National Encouragement Scholarship, BUPT
+            </td>
+          </tr>
+        </table>
+        <!-- Awards End -->
+        <!-- ***************************************************************************************** -->
+        
+        <!-- ***************************************************************************************** -->
+       <!-- Association Begin -->
+       <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+        <tr>
+          <td>
+            <heading>Association Experience</heading>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+        <colgroup>
+              <col span="1" style="width: 25%;">
+              <col span="1" style="width: 75%;">
+        </colgroup>
+        <tr>
+          <td valign="center">
+            2022-Present
+          </td>
+          <td> 
+              Class President, School of Computer Science and Technology, UCAS
+          </td>
+        </tr>
+        <tr>
+          <td valign="center">
+            2022-2023
+          </td>
+          <td> 
+              Minister of the Organization Department, Student Career Development Association, ICT, CAS
+          </td>
+        </tr>
+        <tr>
+          <td valign="center">
+            2018-2020
+          </td>
+          <td> 
+              Campus Broadcasting Station Announcer, BUPT
+          </td>
+        </tr>
+      </table> -->
+      <!-- Association End -->
+      <!-- ***************************************************************************************** -->
+        
+        <table width="100%" align="center" border="0" cellpadding="12">
+          <tr>
+            <td width="100%" valign="center">
+              <p class="footer">
+                Design: <a href="https://jonbarron.info/" target="_blank" style="color: #777; font-size: 14px;">Jon Barron</a>, <a href="https://liminyang.web.illinois.edu/  " target="_blank" style="color: #777; font-size: 14px;">Limin Yang</a>, <a href="https://sheng-qiang.github.io/" target="_blank" style="color: #777; font-size: 14px;">Qiang Sheng</a>, and <a href="https://beauding.github.io/  " target="_blank" style="color: #777; font-size: 14px;">Bo Ding</a><br>
+              Last updated:
+                <script>
+                  t = new Date(document.lastModified).toLocaleDateString()
+                  document.write(t);
+                </script>
+               &nbsp;&nbsp;
+               <span id="busuanzi_container_site_pv">#Visit: <span id="busuanzi_value_site_pv"></span> (2023/6/11~)</span>
+              </p>
+              <!-- <a href='https://clustrmaps.com/site/1bw50'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=wBF5tfgvAkkyqAbEjzbMGcUzd0AfaIK4SLABsMTVLto'/></a> -->
+            </td>
+          </tr>
+          <tr>
+            <td width="100%" valign="center">
+              <a href='https://clustrmaps.com/site/1bw50'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=wBF5tfgvAkkyqAbEjzbMGcUzd0AfaIK4SLABsMTVLto' width="1px"/></a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

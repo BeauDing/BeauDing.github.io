@@ -161,6 +161,12 @@
       flex-wrap: wrap;
       margin-bottom: 15px;
       width: 100%;
+      align-items: flex-start; /* Default top alignment */
+    }
+
+    /* Vertical centering for intro and publications */
+    #intro.row, #publications .row {
+      align-items: center;
     }
 
     .left-col {
@@ -168,6 +174,8 @@
       max-width: 25%;
       padding: 10px;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
     }
 
     .right-col {
@@ -205,7 +213,7 @@
   <div class="container">
     <main>
       <!-- Intro Begin -->
-      <section id="intro" class="row">
+      <section id="intro" class="row" style="align-items: center;">
         <div class="left-col">
           <img src="images/BoDing.jpg" alt="Bo Ding" height="170" style="border-radius: 50%;">
         </div>
@@ -248,23 +256,23 @@
           </div>
           <div class="row">
             <div class="left-col">2024/08</div>
-            <div class="right-col">I entered the City University of Hong Kong as a Ph.D. student.</div>
+            <div class="right-col">Entered the City University of Hong Kong as a Ph.D. student.</div>
           </div>
           <div class="row">
             <div class="left-col">2024/05</div>
             <div class="right-col">Completed my master's thesis defense.</div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="left-col">2024/04</div>
             <div class="right-col">Invited to serve as a Reviewer for <strong>ACM MM 2024</strong>.</div>
           </div>
           <div class="row">
             <div class="left-col">2024/03</div>
             <div class="right-col">Invited to serve as a PC member for <strong>WWW 2024</strong>.</div>
-          </div>
+          </div> -->
           <div class="row">
             <div class="left-col">2023/07</div>
-            <div class="right-col">One first-authored paper got accepted by <strong>MTAP</strong>.</div>
+            <div class="right-col">One paper got accepted by <strong>MTAP</strong>.</div>
           </div>
         </section>
         <!-- News End -->
@@ -286,7 +294,7 @@
             <div class="right-col">
               <strong class="papertitle">Generalizable Dynamic Representation Learning for Source Identification in Sequential Data</strong>
               <br>
-              <span class="underline">Bo Ding</span>, Tiexin Qin, Renjie Wan, and Haoliang Li
+              <span class="underline">Bo Ding*</span>, Tiexin Qin*, Renjie Wan, and Haoliang Li
               <br>
               <i>IEEE Transactions on Knowledge and Data Engineering, 2026 </i>
               <br>
@@ -324,8 +332,8 @@
               <br>
               <i>Multimedia Tools and Applications, 2023 </i>
               <br>
-              <a href="https://doi.org/10.1007/s11042-023-16173-4" target="_blank" rel="noopener noreferrer">Paper</a> &nbsp;/&nbsp;
-              <a href="https://blog.csdn.net/db895166315/article/details/134764790?spm=1001.2014.3001.5501" target="_blank" rel="noopener noreferrer">Chinese Blog</a>
+              <a href="https://doi.org/10.1007/s11042-023-16173-4" target="_blank" rel="noopener noreferrer">Paper</a>
+              <!-- <a href="https://blog.csdn.net/db895166315/article/details/134764790?spm=1001.2014.3001.5501" target="_blank" rel="noopener noreferrer">Chinese Blog</a> -->
               <br>
               <span class="tldr">TL;DR: We propose a multi-branch spatio-temporal difference network for face forgery detection by capturing complementary low-level spatio-temporal features in videos, which can enhance the generalization ability of the model.</span>
             </div>
@@ -364,6 +372,7 @@
               <span class="tldr">TL;DR: We propose a general transductive ZSL method based on GANs, called GT-GAN, which introduces unlabeled unseen samples for training, to improve the performance of the generator.</span>
             </div>
           </div>
+          
         </section>
         <!-- Publications End -->
         <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">

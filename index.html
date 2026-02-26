@@ -168,9 +168,6 @@
       max-width: 25%;
       padding: 10px;
       box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .right-col {
@@ -178,19 +175,6 @@
       max-width: 75%;
       padding: 10px;
       box-sizing: border-box;
-      vertical-align: middle;
-    }
-
-    .news-date {
-      flex: 0 0 20%;
-      max-width: 20%;
-      padding: 5px 10px;
-    }
-
-    .news-content {
-      flex: 0 0 80%;
-      max-width: 80%;
-      padding: 5px 10px;
     }
 
     .section-heading {
@@ -201,11 +185,10 @@
 
     /* Responsive adjustments */
     @media screen and (max-width: 800px) {
-      .left-col, .right-col, .news-date, .news-content {
+      .left-col, .right-col {
         flex: 0 0 100%;
         max-width: 100%;
         text-align: left;
-        justify-content: flex-start;
       }
       .left-col img, .left-col video {
         margin-bottom: 10px;
@@ -260,28 +243,28 @@
             </div>
           </div>
           <div class="row">
-            <div class="news-date">2026/02</div>
-            <div class="news-content">One paper got accepted by TKDE.</div>
+            <div class="left-col">2026/02</div>
+            <div class="right-col">One paper got accepted by <strong>TKDE</strong>.</div>
           </div>
           <div class="row">
-            <div class="news-date">2024/08</div>
-            <div class="news-content">I entered the City University of Hong Kong as a Ph.D. student.</div>
+            <div class="left-col">2024/08</div>
+            <div class="right-col">I entered the City University of Hong Kong as a Ph.D. student.</div>
           </div>
           <div class="row">
-            <div class="news-date">2024/05</div>
-            <div class="news-content">Completed my master's theis defense.</div>
+            <div class="left-col">2024/05</div>
+            <div class="right-col">Completed my master's thesis defense.</div>
           </div>
           <div class="row">
-            <div class="news-date">2024/04</div>
-            <div class="news-content">Invited to serve as a Reviewer for ACM MM 2024.</div>
+            <div class="left-col">2024/04</div>
+            <div class="right-col">Invited to serve as a Reviewer for <strong>ACM MM 2024</strong>.</div>
           </div>
           <div class="row">
-            <div class="news-date">2024/03</div>
-            <div class="news-content">Invited to serve as a PC member for WWW 2024.</div>
+            <div class="left-col">2024/03</div>
+            <div class="right-col">Invited to serve as a PC member for <strong>WWW 2024</strong>.</div>
           </div>
           <div class="row">
-            <div class="news-date">2023/07</div>
-            <div class="news-content">One first-authored paper got accepted by MTAP.</div>
+            <div class="left-col">2023/07</div>
+            <div class="right-col">One first-authored paper got accepted by <strong>MTAP</strong>.</div>
           </div>
         </section>
         <!-- News End -->

@@ -1,7 +1,11 @@
 name: Cleanup Deployments
 
 on:
-  workflow_dispatch: # 建议先手动触发测试
+  workflow_dispatch: # 保留手动触发按钮，方便随时手动清理
+  schedule:
+    # 这里的格式是：分 时 日 月 周 (均为 UTC 时间)
+    # 例子：每周一的凌晨 0:00 (UTC) 运行一次
+    - cron: '0 0 * * 1'  
 
 permissions:
   deployments: write

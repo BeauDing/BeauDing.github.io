@@ -1,0 +1,25 @@
+name: Cleanup Deployments
+
+on:
+  # 每次推送到 main 分支后触发
+  push:
+    branches:
+      - main
+  # 也可以手动在 Actions 页面点击运行
+  workflow_dispatch:
+
+permissions:
+  deployments: write
+  contents: read
+
+jobs:
+  delete-history:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete all deployments
+        uses: vitorsgomes/delete-deployment-action@v0.2.1
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          # 'all' 会删除所有记录。如果你想保留最后一次，可以改为 'old'
+          type: 'all'

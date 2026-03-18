@@ -1,26 +1,48 @@
 name: Cleanup Deployments
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_dispatch: # 建议先手动触发测试
 
-# 必须确保有写入权限
 permissions:
   deployments: write
-  contents: read
+  contents: write
+  actions: write
 
 jobs:
   delete-history:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete all deployments
-        uses: strumwolf/delete-deployment-environment@v3
+      - name: Cleanup GitHub Pages Deployments
+        uses: actions/github-script@v7
         with:
-          # 使用内置的 token
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 这里的 environment 通常是 github-pages
-          environment: github-pages
-          # 只删除部署记录，不删除环境本身
-          only_remove_deployments: true
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            
+            // 1. 获取所有部署记录
+            const res = await github.rest.repos.listDeployments({
+              owner,
+              repo,
+              environment: 'github-pages'
+            });
+
+            console.log(`Found ${res.data.length} deployments.`);
+
+            for (const deployment of res.data) {
+              // 2. 将部署状态设为 inactive (只有 inactive 才能删除)
+              await github.rest.repos.createDeploymentStatus({
+                owner,
+                repo,
+                deployment_id: deployment.id,
+                state: 'inactive'
+              });
+
+              // 3. 删除该部署记录
+              await github.rest.repos.deleteDeployment({
+                owner,
+                repo,
+                deployment_id: deployment.id
+              });
+              
+              console.log(`Deleted deployment: ${deployment.id}`);
+            }

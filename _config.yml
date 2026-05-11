@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Bo Ding (丁博)"
+  name             : "Bo Ding"
   avatar           : "images/BoDing.jpg"
   bio              : "Ph.D. Student"
   location         : "Hong Kong SAR, China"

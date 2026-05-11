@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Bo Ding"
-description              : "Ph.D. student in Electrical Engineering at City University of Hong Kong."
+description              : "AI Security | Social Media Security"
 repository               : "BeauDing/BeauDing.github.io"
 google_scholar_stats_use_cdn : false
 google_scholar_stats_enabled : false
@@ -24,7 +24,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Bo Ding"
   avatar           : "images/BoDing.jpg"
-  bio              : "City University of Hong Kong"
+  bio              : "Ph.D. Student, CityU"
   location         : "Hong Kong SAR, China"
   employer         :
   pubmed           : 

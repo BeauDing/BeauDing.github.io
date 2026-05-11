@@ -1,4 +1,4 @@
-# 🎖 Honors and Awards
+# 🎖 Awards
 
 - *2024* Excellent Prize of the President Scholarship, ICT, CAS
 - *2023* The First Prize Scholarship, ICT, CAS
